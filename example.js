@@ -1,6 +1,6 @@
 const { Unprikod } = require("./main");
 
-let unpri = new Unprikod("a4xgXyCFrcyM7YeaoaDLkaXaenVVxdMyNaojv3fqWKxVNACRESXhxqKWL5UTyfeH");
+let unpri = new Unprikod("YOUR_TOKEN"); //GET FROM WEBSITE PESTO
 
 unpri.exec(unpri.python, "print('hello world')").then(o => {
 	console.log(o.runtime.output);
